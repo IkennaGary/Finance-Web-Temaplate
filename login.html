@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company's Name | savings_account/login</title>
+    <link rel="stylesheet" href="public/src/css/login.css" />
+    <link rel="stylesheet" href="./public/src/font/sriracha.css" />
+    <link
+      rel="stylesheet"
+      href="public/Assets/fontawesome-free-5.13.0-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-header">
+        <div class="img">
+          <img src="Public/Assets/logo/Subtraction.svg" alt="" />
+        </div>
+        <div class="text-logo">
+          <h3 class="title">Company's Name</h3>
+        </div>
+      </div>
+      <div class="right-header">
+        <ul class="ul">
+          <li class="h-li">
+            <a href="index.html" class="links">Home</a>
+            <!-- <ul class="drop-down"></ul> -->
+          </li>
+          <li class="h-li">
+            <a href="other_service.html" class="links">SERVICES </a>
+            <section class="servdis">
+              <div class="the-wrapset">
+                <div class="head-mod">
+                  <h3 class="title">Our Finance</h3>
+                  <ul class="lintk">
+                    <li class="licnt">
+                      <a href="loan.html" class="lank">Loans</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="savings.html" class="lank">Savings</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="investment.html" class="lank">Investment</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="head-mod">
+                  <h3 class="title">Other Services</h3>
+                  <ul class="lintk">
+                    <li class="licnt">
+                      <a href="" class="lank">Car Rental Services</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Job Sourcing</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Facility Managment</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Property Managment</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Cleaning Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="h-li"><a href="" class="links">ABOUT US</a></li>
+          <li class="h-li"><a href="team.html" class="links">OUR TEAM</a></li>
+          <li class="h-li">
+            <a href="contact.html" class="links">CONTACT US</a>
+          </li>
+          <li class="h-li active">
+            <a href="login.html" class="links">LOGIN</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="underlay225"></div>
+    <script type="text/javascript">
+      window.onscroll = function () {
+        myfunction();
+      };
+      function myfunction() {
+        if (
+          document.body.scrollTop > 65 ||
+          document.documentElement.scrollTop > 65
+        ) {
+          document.querySelector(".header").classList.add("fixedHeadTop");
+        } else {
+          document.querySelector(".header").classList.remove("fixedHeadTop");
+        }
+      }
+    </script>
+
+    <div id="login-main">
+      <div class="login-header">
+        <h2>Login to your Account</h2>
+      </div>
+
+      <form action="">
+        <div>
+          <label for="email">Email or Phone Number</label>
+        </div>
+        <div>
+          <input type="text" placeholder="Email or Phone Number" />
+        </div>
+
+        <div>
+          <label for="email">Password</label>
+        </div>
+        <div>
+          <input type="text" placeholder="Password" />
+        </div>
+        <div class="log-btn">
+          <a href="main_dashboard.html">LOGIN</a>
+        </div>
+      </form>
+      <div class="login">
+        <div>
+          <a href="save_account.html"
+            >Don't have an account?<span style="padding-left: 10px;">
+              Register</span
+            ></a
+          >
+        </div>
+        <div style="font-size: 0.8em; padding-top: 15px;">
+          <a href="reset_pass.html">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Loan</title>
+    <link rel="stylesheet" href="public/src/css/loan_calc.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="public/Assets/logo/sunglogo copy.png" alt="" />
+      </div>
+      <div class="tiles">
+        <ul>
+          <li>
+            <a href="">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="currentcolor"
+                    d="M6.5 17.003h-4c-.276 0-.5-.23-.5-.5v-7.5H.5a.508.508 0 0 1-.47-.34.495.495 0 0 1 .152-.55l8.5-7a.506.506 0 0 1 .636 0L12 3.322v-1.82c0-.28.224-.5.5-.5h2c.276 0 .5.22.5.5v4.29l2.818 2.32a.505.505 0 0 1-.317.89H16v7.5c0 .27-.225.5-.5.5h-4v-6.3c0-.28-.225-.5-.5-.5H7c-.277 0-.5.22-.5.5v6.3z"
+                  ></path></svg
+              ></span>
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="">
+              WHAT WE DO
+            </a>
+            <div class="div2_bx">
+              <section class="sect22009">
+                <div class="sect22009-lx">
+                  <h3 class="title33">SAVE UP CREDIT</h3>
+                  <ul>
+                    <li><a href="">Loans</a></li>
+                    <li><a href="">Savings</a></li>
+                    <li><a href="">Land/Estate Managment</a></li>
+                    <li><a href="">Facility Managment</a></li>
+                    <li><a href="">Job Sourcing</a></li>
+                    <li><a href="">Car Rentals</a></li>
+                    <li><a href="">Cleaning Services</a></li>
+                  </ul>
+                </div>
+                <div class="sect22009-lx">
+                  <h3 class="title33">Company's Name LOGISTICS</h3>
+                  <ul>
+                    <li><a href="">Courier Services</a></li>
+                    <li><a href="">Interstate Delivery</a></li>
+                    <li><a href="">International Delivery</a></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </li>
+          <li>
+            <a href="">
+              ABOUT US
+            </a>
+          </li>
+          <li>
+            <a href="">
+              CONTACT US
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="calc-main">
+      <div class="calc-header">
+        <h1>Acquire a Loan</h1>
+      </div>
+      <div class="calc-body">
+        <h3>CALCULATOR</h3>
+        <div>
+            <label for="amount">Amount Needed <br><span>(Naira)</span></label>
+            <input type="text" id="amount" placeholder="10,000.00" value=""/>
+        </div>
+        <div>
+            <label for="amount">Duration before payment<br> <span> (Months)</span></label>
+            <input type="number" id="duration" value="1" />
+        </div>
+        <div>
+            <label for="amount">Monthly dues <br><span>(estimate)</span> </label>
+            <input type="text" id="due" placeholder="0.00" />
+        </div>
+        <div>
+            <label for="amount">Total Amount refund <br> <span>(estimate)</span></label>
+            <input type="text" id="total" placeholder="0.00" />
+        </div>
+
+      <div class="calc-btn">
+        <a id="calc">Calculate</a>
+        <a href="#">Request</a>
+      </div>
+    </div>
+ <script>
+     var amount = document.getElementById('amount');
+     var duration = document.getElementById('duration');
+     var due = document.getElementById('due');
+     var total = document.getElementById('total');
+     var calc = document.getElementById('calc');
+      var interest = 5;
+      var days = 30;
+      var tA = 10000;
+     calc.addEventListener('click', CalcLoan);
+     
+     function CalcLoan(){
+
+      var n = amount.value;
+      var d = duration.value;
+
+          if(n < tA){
+           alert('Sorry the Amount is Less than Loan Amount');
+          }else{
+          //  if(!d == null){
+         var st = d * days; 
+          console.log(st);
+           // }
+         
+           
+          }
+     }
+
+ </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

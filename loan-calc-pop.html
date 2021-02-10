@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company's NameLoans</title>
+    <link rel="stylesheet" type="text/css" href="./css/loan.css" />
+    <link rel="stylesheet" type="text/css" href="./public/src/css/index.css" />
+    <link rel="stylesheet" href="./public/src/css/calc-pop.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../Assets/fontawesome-free-5.13.0-web/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="wrapset">
+      <div class="innwrapset" id="innwrapset">
+        <div class="leftn">
+          <div class="calc-dist">
+            <div class="labelx1">
+              <toplab
+                ><label for="" class="curency label"></label>AMOUNT TO BE
+                BOROWED.</toplab
+              >
+              <div class="input-bxt">
+                <div class="flag-h">
+                  <div class="mmg">
+                    <img src="./public/Assets/recent/ngnflag.jpg" alt="" />
+                  </div>
+                  <p class="pster">NGN</p>
+                </div>
+                <input
+                  type="number"
+                  name=""
+                  id="inputer"
+                  placeholder="AMOUNT"
+                />
+                <div class="ex-clear" id="ex-clear">&times;</div>
+              </div>
+            </div>
+            <div class="labelx1-">
+              <toplab
+                ><label for="" class="curency label"></label>DURATION
+                (Months)</toplab
+              >
+              <div class="selectbxt">
+                <select name="" id="d-select">
+                  <!-- <option value="0" selected>0</option> -->
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                </select>
+                <div class="montz">
+                  <p class="mt">MONTHS</p>
+                  <div class="icn-styl">
+                    <svg
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="-10 13.2 14.7 8.4"
+                    >
+                      <style>
+                        .st0 {
+                          fill: #d5d5d5;
+                        }
+                      </style>
+                      <path
+                        class="st0"
+                        d="M4.7 14.6l-7 7H-3l-7-7 1.3-1.4 6 6 6-6 1.4 1.4z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="outset-list" id="outset-list">
+            <!-- <div class="title-list">
+              <table class="table table-responsive default-table-head">
+                <thead>
+                  <tr>
+                    <th rowspan="3" class="default col-one">
+                      <label>Interest Paid Monthly</label>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div> -->
+
+            <table class="table table-responsive-tbhead">
+              <colgroup>
+                <col />
+                <col />
+                <col class="info" />
+              </colgroup>
+              <thead>
+                <tr class="printHeader">
+                  <th scope="col">TOTAL INTEREST</th>
+                  <!-- <th scope="col">
+                    <span class="blue-indicator no-print"></span>Total Interest
+                    Paid
+                  </th>
+                  <th scope="col">
+                    <span class="blue-indicator no-print"></span>Outstanding
+                    Loan
+                  </th> -->
+                </tr>
+              </thead>
+              <tbody id="marginTable">
+                <tr>
+                  <td id="main-ti">NGN 0.00</td>
+                  <!-- <td>27,850.64</td>
+                  <td>175,000.00</td> -->
+                </tr>
+                <!-- <tr>
+                  <td>2</td>
+                  <td>44,119.60</td>
+                  <td>126,192.18</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>49,612.18</td>
+                  <td>68,409.02</td>
+                </tr> -->
+              </tbody>
+            </table>
+
+            <div class="printbd">
+              <div class="printrwrap">
+                <button>
+                  <span>
+                    <svg
+                      class="gi gi-printer-outline fs-sm"
+                      width="1.32em"
+                      height="1.32em"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="../../external.html?link=http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7zM8 5h8v2H8zm-.5 14v-4h9v4zM20 16.33a.66.66 0 0 1-.64.67h-.86v-2a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v2h-.86a.66.66 0 0 1-.64-.67V9.67A.66.66 0 0 1 4.64 9h14.72a.66.66 0 0 1 .64.67z"
+                      ></path>
+                    </svg> </span
+                  >Download and Print
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightn">
+          <div class="round-wrap">
+            <div class="inner-br">
+              <h1>Monthly Payment</h1>
+              <div class="und-c" id="und-c">0.00</div>
+              <div class="below Total Interest">
+                Total Payement
+                <br />
+                <br />
+                <span class="tt-totl" id="totalint">0.00</span>
+              </div>
+            </div>
+          </div>
+          <a href="" class="proceedbtn">PROCEED</a>
+        </div>
+      </div>
+    </div>
+
+    <script async src="./CALC.JS"></script>
+  </body>
+</html>

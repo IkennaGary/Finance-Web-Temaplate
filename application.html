@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company's Name | Application Form</title>
+    <link rel="stylesheet" href="public/src/css/application.css" />
+    <link rel="stylesheet" href="public/src/css/calc-pop.css" />
+    <link rel="stylesheet" href="./public/src/font/sriracha.css" />
+    <link
+      rel="stylesheet"
+      href="public/Assets/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <style>
+      .clearx {
+        position: absolute;
+        right: 4px;
+        top: 0px;
+        font-size: 43px;
+        font-weight: 900;
+        cursor: pointer;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapset">
+      <div class="innwrapset" id="innwrapset">
+        <div class="clearx">&times;</div>
+        <div class="leftn">
+          <div class="calc-dist">
+            <div class="labelx1">
+              <toplab
+                ><label for="" class="curency label"></label>AMOUNT TO BE
+                BOROWED.</toplab
+              >
+              <div class="input-bxt">
+                <div class="flag-h">
+                  <div class="mmg">
+                    <img src="./public/Assets/recent/ngnflag.jpg" alt="" />
+                  </div>
+                  <p class="pster">NGN</p>
+                </div>
+                <input
+                  type="number"
+                  name=""
+                  id="inputer"
+                  placeholder="AMOUNT"
+                />
+                <div class="ex-clear" id="ex-clear">&times;</div>
+              </div>
+            </div>
+            <div class="labelx1-">
+              <toplab
+                ><label for="" class="curency label"></label>DURATION
+                (Months)</toplab
+              >
+              <div class="selectbxt">
+                <select name="" id="d-select">
+                  <!-- <option value="0" selected>0</option> -->
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                </select>
+                <div class="montz">
+                  <p class="mt">MONTHS</p>
+                  <div class="icn-styl">
+                    <svg
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="-10 13.2 14.7 8.4"
+                    >
+                      <style>
+                        .st0 {
+                          fill: #d5d5d5;
+                        }
+                      </style>
+                      <path
+                        class="st0"
+                        d="M4.7 14.6l-7 7H-3l-7-7 1.3-1.4 6 6 6-6 1.4 1.4z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="outset-list" id="outset-list">
+            <!-- <div class="title-list">
+              <table class="table table-responsive default-table-head">
+                <thead>
+                  <tr>
+                    <th rowspan="3" class="default col-one">
+                      <label>Interest Paid Monthly</label>
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </div> -->
+
+            <table class="table table-responsive-tbhead">
+              <colgroup>
+                <col />
+                <col />
+                <col class="info" />
+              </colgroup>
+              <thead>
+                <tr class="printHeader">
+                  <th scope="col">TOTAL INTEREST</th>
+                  <!-- <th scope="col">
+                    <span class="blue-indicator no-print"></span>Total Interest
+                    Paid
+                  </th>
+                  <th scope="col">
+                    <span class="blue-indicator no-print"></span>Outstanding
+                    Loan
+                  </th> -->
+                </tr>
+              </thead>
+              <tbody id="marginTable">
+                <tr>
+                  <td id="main-ti">NGN 0.00</td>
+                  <!-- <td>27,850.64</td>
+                  <td>175,000.00</td> -->
+                </tr>
+                <!-- <tr>
+                  <td>2</td>
+                  <td>44,119.60</td>
+                  <td>126,192.18</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>49,612.18</td>
+                  <td>68,409.02</td>
+                </tr> -->
+              </tbody>
+            </table>
+
+            <div class="printbd">
+              <div class="printrwrap">
+                <button>
+                  <span>
+                    <svg
+                      class="gi gi-printer-outline fs-sm"
+                      width="1.32em"
+                      height="1.32em"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="../../external.html?link=http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7zM8 5h8v2H8zm-.5 14v-4h9v4zM20 16.33a.66.66 0 0 1-.64.67h-.86v-2a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v2h-.86a.66.66 0 0 1-.64-.67V9.67A.66.66 0 0 1 4.64 9h14.72a.66.66 0 0 1 .64.67z"
+                      ></path>
+                    </svg> </span
+                  >Download and Print
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightn">
+          <div class="round-wrap">
+            <div class="inner-br">
+              <h1>Monthly Payment</h1>
+              <div class="und-c" id="und-c">0.00</div>
+              <div class="below Total Interest">
+                Total Payement
+                <br />
+                <br />
+                <span class="tt-totl" id="totalint">0.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="" class="proceedbtn">PROCEED</a> -->
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="left-header">
+        <div class="img">
+          <img src="Public/Assets/logo/Subtraction.svg" alt="" />
+        </div>
+        <div class="text-logo">
+          <h3 class="title">Company's Name</h3>
+        </div>
+      </div>
+      <div class="right-header">
+        <ul class="ul">
+          <li class="h-li">
+            <a href="index.html" class="links">Home</a>
+            <!-- <ul class="drop-down"></ul> -->
+          </li>
+          <li class="h-li active">
+            <a href="other_service.html" class="links">SERVICES </a>
+            <section class="servdis">
+              <div class="the-wrapset">
+                <div class="head-mod">
+                  <h3 class="title">Our Finance</h3>
+                  <ul class="lintk">
+                    <li class="licnt">
+                      <a href="loan.html" class="lank">Loans</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="savings.html" class="lank">Savings</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="investment.html" class="lank">Investment</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="head-mod">
+                  <h3 class="title">Other Services</h3>
+                  <ul class="lintk">
+                    <li class="licnt">
+                      <a href="" class="lank">Car Rental Services</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Job Sourcing</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Facility Managment</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Property Managment</a>
+                    </li>
+                    <li class="licnt">
+                      <a href="" class="lank">Cleaning Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="h-li"><a href="" class="links">ABOUT US</a></li>
+          <li class="h-li"><a href="team.html" class="links">OUR TEAM</a></li>
+          <li class="h-li">
+            <a href="contact.html" class="links">CONTACT US</a>
+          </li>
+          <li class="h-li"><a href="login.html" class="links">LOGIN</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="underlay225"></div>
+    <script type="text/javascript">
+      window.onscroll = function () {
+        myfunction();
+      };
+      function myfunction() {
+        if (
+          document.body.scrollTop > 65 ||
+          document.documentElement.scrollTop > 65
+        ) {
+          document.querySelector(".header").classList.add("fixedHeadTop");
+        } else {
+          document.querySelector(".header").classList.remove("fixedHeadTop");
+        }
+      }
+    </script>
+
+    <div class="cal-link">
+      <a href="loan_calc.html" id="prevent">LOAN CALCULATOR</a>
+    </div>
+
+    <div id="application-header">
+      <h2>**PLEASE NOTE **</h2>
+      <p>
+        kindly fill up all entries correctly with the appropriate information.
+      </p>
+    </div>
+
+    <div id="application-detail">
+      <div class="app-loan-type">
+        <div class="loan-type-header">
+          <h2>What Kind Of Loan Do You Want?</h2>
+        </div>
+        <div class="loan-type-select">
+          <div class="person-type">
+            <label>
+              <input type="checkbox" class="check1" name="" />
+              <p>Personal Loan</p>
+            </label>
+          </div>
+          <div class="buisness-type">
+            <label>
+              <input type="checkbox" class="check2" name="" />
+              <p>buisness Loan</p>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="application-main-det">
+        <div class="personal-app-det">
+          <div class="personal-header">
+            <h2>Personal Information</h2>
+          </div>
+          <form action="process.php">
+            <div class="personal-first-layer">
+              <label for="first_name"
+                >First Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="first_name" />
+
+              <label for="middle_name"
+                >Middle Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="first_name" />
+
+              <label for="gender"
+                >Gender<span style="color: red;">*</span></label
+              >
+              <select name="gender" id="user-gender">
+                <option value="select">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+
+              <label for="phone_number1"
+                >Phone Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="phone_number" />
+
+              <label for="email">Email<span style="color: red;">*</span></label>
+              <input type="email" name="email" />
+            </div>
+
+            <div class="personal-second-layer">
+              <label for="last_name"
+                >Last Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="last_name" />
+
+              <label for="Date Of Birth"
+                >Date Of Birth<span style="color: red;">*</span></label
+              >
+              <input type="date" name="date_of_birth" />
+
+              <label for="marital_status"
+                >Marital Status<span style="color: red;">*</span></label
+              >
+              <select name="marital_status" id="marital_status">
+                <option value="select">Select...</option>
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+                <option value="divorce">Divorce</option>
+              </select>
+
+              <label for="phone_number2"
+                >Phone Number2<span style="color: red;">*</span></label
+              >
+              <input
+                type="text"
+                name="phone_number2"
+                placeholder="Optional.."
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="address-app-det">
+          <div class="address-header">
+            <h2>Address information</h2>
+          </div>
+          <form action="process.php">
+            <div class="address-first-layer">
+              <label for="state">State<span style="color: red;">*</span></label>
+              <input type="text" name="state" />
+
+              <label for="lga">LGA<span style="color: red;">*</span></label>
+              <input type="text" name="lga" />
+            </div>
+
+            <div class="address-second-layer">
+              <label for="city">City<span style="color: red;">*</span></label>
+              <input type="text" name="city" />
+
+              <label for="home_address"
+                >Home Addrress<span style="color: red;">*</span></label
+              >
+              <input type="text" name="home_address" />
+            </div>
+          </form>
+        </div>
+
+        <div class="id-app-det">
+          <div class="id-header">
+            <h2>Identification Information</h2>
+          </div>
+          <form action="process.php">
+            <div class="id-first-layer">
+              <label for="means_id"
+                >Means Of Id<span style="color: red;">*</span></label
+              >
+              <select name="id_options" id="id_option">
+                <option value="select">Select...</option>
+                <option value="int_passport">International Passport</option>
+                <option value="nat_id">National Id</option>
+                <option value="driver_lin">Drivers License</option>
+                <option value="stu_id">Student Id</option>
+              </select>
+
+              <label for="iss_date"
+                >Issue Date<span style="color: red;">*</span></label
+              >
+              <input type="date" name="iss_date" />
+            </div>
+            <div class="id-second-layer">
+              <label for="id_number"
+                >Id Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="id_number" />
+
+              <label for="exp_date"
+                >Expiring Date<span style="color: red;">*</span></label
+              >
+              <input type="date" name="exp_date" />
+            </div>
+          </form>
+        </div>
+
+        <div class="kin-app-det">
+          <div class="kin-header">
+            <h2>Next Of Kin Information</h2>
+          </div>
+          <form action="process.php">
+            <div class="kin-first-layer">
+              <label for="kin_name"
+                >Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="kin_name" />
+
+              <label for="kin_num"
+                >Phone Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="kin_number" />
+
+              <label for="kin_email"
+                >Email address<span style="color: red;">*</span></label
+              >
+              <input type="email" name="email_address" />
+            </div>
+
+            <div class="kin-second-layer">
+              <label for="kin_address"
+                >Home Address<span style="color: red;">*</span></label
+              >
+              <input type="text" name="kin_address" />
+
+              <label for="kin_num2"
+                >Phone Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="kin_number2" placeholder="Optional..." />
+            </div>
+          </form>
+        </div>
+
+        <div class="emp-app-det">
+          <div class="emp-header">
+            <h2>Employment Details (Personal Loan)</h2>
+          </div>
+          <form action="process.php">
+            <div class="emp-first-layer">
+              <label for="current_emp"
+                >Current Employer<span style="color: red;">*</span></label
+              >
+              <input type="text" name="current_emp" />
+
+              <label for="staff_id"
+                >Staff Id<span style="color: red;">*</span></label
+              >
+              <input type="text" name="staff_id" />
+
+              <label for="office_add"
+                >Office Address<span style="color: red;">*</span></label
+              >
+              <input type="text" name="office_add" />
+
+              <label for="pension_num"
+                >Pension Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="pension_num" />
+            </div>
+
+            <div class="emp-second-layer">
+              <label for="emp_date"
+                >Employment Date<span style="color: red;">*</span></label
+              >
+              <input type="date" name="emp_date" />
+
+              <label for="net_inc"
+                >Net Monthly Income<span style="color: red;">*</span></label
+              >
+              <input type="text" name="net_inc" />
+
+              <label for="office_mail"
+                >Office Mail<span style="color: red;">*</span></label
+              >
+              <input type="email" name="office-mail" />
+
+              <label for="tax_num"
+                >Tax Num<span style="color: red;">*</span></label
+              >
+              <input type="text" name="tax_num" />
+            </div>
+          </form>
+        </div>
+
+        <div class="bus-app-det">
+          <div class="bus-header">
+            <h2>Business Details (Business Loan)</h2>
+          </div>
+          <form action="process.php">
+            <div class="bus-first-layer">
+              <label for="bus_name"
+                >Business Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="bus_name" />
+
+              <label for="bus_stage"
+                >Business Stage<span style="color: red;">*</span></label
+              >
+              <select name="bus_stage" id="bus_stage">
+                <option value="select">Select..</option>
+                <option value="start"
+                  >Start Up - running less than 12 months</option
+                >
+                <option value="start"
+                  >Existing - running more than 12 months</option
+                >
+                <option value="start"
+                  >Not trading - will be up and running in 12 months</option
+                >
+              </select>
+
+              <label for="bus_emp"
+                >Number Of Employees<span style="color: red;">*</span></label
+              >
+              <input type="number" name="bus_emp" value="5" class="bus-num" />
+            </div>
+            <div class="bus-second-layer">
+              <label for="bus_type"
+                >Business Type<span style="color: red;">*</span></label
+              >
+              <select name="bus_type" id="bus_type">
+                <option value="select">Select</option>
+                <option value="sole_trader">Sole Trader</option>
+                <option value="patnership">Partnership</option>
+                <option value="ltd_comp">Limited Company</option>
+              </select>
+              <label for="bus_add"
+                >Business Address<span style="color: red;">*</span></label
+              >
+              <input type="text" name="bus_add" />
+
+              <label for="ann_turn"
+                >Annual Turn Over<span style="color: red;">*</span></label
+              >
+              <input type="text" name="ann_turn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="pay-app-det">
+          <div class="pay-header">
+            <h2>Amount Of Loan Required?</h2>
+          </div>
+
+          <form action="process.php">
+            <div class="pay-first-layer">
+              <label for="amount"
+                >Amount Needed?<span style="color: red;">*</span></label
+              >
+              <input type="text" name="amount" />
+
+              <label for="month_install"
+                >Monthly Installments<span style="color: red;">*</span></label
+              >
+              <input type="number" name="month_install" />
+            </div>
+
+            <div class="pay-second-layer">
+              <label for="amount_time"
+                >For How Long?(Months)<span style="color: red;">*</span></label
+              >
+              <input type="number" name="amount_time" value="3" />
+            </div>
+          </form>
+        </div>
+
+        <div class="bank-app-det">
+          <div class="bank-header">
+            <h2>Bank Details</h2>
+          </div>
+          <div class="bvn-lock">
+            <i class="fas fa-lock"></i>
+            <p>
+              <i
+                >This does not give Company's Name any access to your bank
+                information or balances. This just enables Company's Name
+                confirm your identity (real name, phone number & date of birth)
+                from your bank.</i
+              >
+            </p>
+          </div>
+          <form action="process.php">
+            <div class="bank-first-layer">
+              <label for="acc_name"
+                >Account Name<span style="color: red;">*</span></label
+              >
+              <input type="text" name="acc_name" />
+
+              <label for="bvn">BVN<span style="color: red;">*</span></label>
+              <input type="text" name="bvn" />
+            </div>
+
+            <div class="bank-second-layer">
+              <label for="acc_num"
+                >Account Number<span style="color: red;">*</span></label
+              >
+              <input type="text" name="acc_num" />
+
+              <label for="name_bank"
+                >Bank<span style="color: red;">*</span></label
+              >
+              <select name="banks" id="banks">
+                <option value="select">Select..</option>
+                <option value="uba">UBA</option>
+                <option value="access">ACCESS BANK</option>
+                <option value="polaris">POLARIS BANK</option>
+                <option value="union">UNION BANK</option>
+                <option value="first">FIRST BABNK</option>
+                <option value="fidelity">FIDELITY BANK</option>
+                <option value="keystone">KEYSTONE BANK</option>
+                <option value="wema">WEMA BANK</option>
+                <option value="stanbic">STANBIC IBTC</option>
+                <option value="eco">ECO BANK</option>
+                <option value="gtb">GT BANK</option>
+                <option value="zenith">ZENITH BANK</option>
+                <option value="fcmb">FCMB</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="know-app-det">
+          <div class="know-header">
+            <h2>How Did You Hear About Us?</h2>
+          </div>
+          <label for="know"
+            >Please Let Us Know How You knew About Us<span style="color: red;"
+              >*</span
+            ></label
+          >
+          <select name="know" id="know">
+            <option value="select">Select..</option>
+            <option value="google">Google search</option>
+            <option value="facebook">Facebook</option>
+            <option value="google_ad">Google Ad</option>
+            <option value="referer">Referer</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="linkedin">Linkedin</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="submit-app-det">
+        <button type="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <footer id="footers">
+      <div class="main-footer">
+        <div class="top-footer">
+          <div class="topex-- about-footer">
+            <h4>
+              <span
+                ><img
+                  src="public/Assets/logo/Subtraction.svg"
+                  alt=""
+                  width="80"
+                  height="60"
+              /></span>
+              Company's Name<br />
+              Credit
+            </h4>
+            <p>
+              Company's Name is a professional servicing company registered with
+              Corporate Affairs Commission of Nigeria. It began full operations
+              in 2018, dedicated to meet clients expectations and objectives.
+            </p>
+          </div>
+          <div class="topex-- asc91">
+            <div class="col-foot">
+              <h3 class="foot-title">About</h3>
+              <ul class="col-ul">
+                <li><a href="">Company's Names</a></li>
+                <li><a href="">Company's NameLogistics</a></li>
+                <li><a href="">Company's NameInvestment</a></li>
+              </ul>
+            </div>
+            <div class="col-foot">
+              <h3 class="foot-title">Contact Us</h3>
+              <ul class="col-ul">
+                <li>
+                  <a href=""
+                    >40 Idowu Martins Street, Adeola Odeku, Victoria Island,
+                    Lagos State</a
+                  >
+                </li>
+                <li><a href="">+234 701 295 2449</a></li>
+                <li><a href="">info@saveupng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="topex-- follow-appi">
+            <div class="apptop">
+              <div class="imgbxapp">
+                <div class="cc7dyt">
+                  <img src="./public/Assets/images/app/ios.webp" alt="" />
+                  <img src="./public/Assets/images/app/android.webp" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="follow-btns">
+              <div class="follow">
+                <a class="instagram" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                <a class="facebook" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="text">
+            Copyright © 2018-2020 Company's Name LTD. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="CALC.JS"></script>
+    <script>
+      const loanPop = document.querySelector(".cal-link");
+      const loanWrap = document.querySelector(".wrapset");
+      const clearx = document.querySelector(".clearx");
+      loanWrap.style.display = "none";
+      const prevent = document.getElementById("prevent");
+      prevent.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+
+      loanPop.addEventListener("click", function () {
+        loanWrap.style.display = "flex";
+      });
+      clearx.addEventListener("click", function () {
+        loanWrap.style.display = "none";
+      });
+      var j, k;
+      for (j = 0; j < 5; ++j) {
+        for (k = 0; k <= j; ++k) {
+          console.log(k);
+        }
+        console.log(j);
+      }
+    </script>
+  </body>
+</html>

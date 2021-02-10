@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company's Name | My DashBoard</title>
+    <link rel="stylesheet" href="public/src/css/main_dashboard.css" />
+    <link rel="stylesheet" href="./public/src/font/sriracha.css" />
+    <link
+      rel="stylesheet"
+      href="public/Assets/fontawesome-free-5.13.0-web/css/all.css"
+    />
+  </head>
+  <body>
+      <input type="checkbox" id="check">
+    <header>
+        <!-- <label for="check">
+            <i class="fas fa-bars" id="sidebar-btn"></i>
+        </label> -->
+      <div class="left-area">
+        <img src="Public/Assets/logo/Repeat Grid 5.png" alt="" width="30">
+        <h3>Company's Name <span>Credit</span></h3>
+      </div>
+      <div class="clr"></div>
+      <div class="right-area">
+        <a href="#" class="notify-btn"> <i class="fas fa-bell"></i><span>Notification</span></a>
+        <a href="index.html" class="logout-btn"> <i class="fas fa-sign-out-alt"></i></i><span>Logout</span></a>
+      </div>
+    </header>
+    <div class="sidebar">
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar-btn"></i>
+        </label>
+      <center>
+        <div class="profile-head">
+                <img
+                src="public/Assets/images/prof.jpg"
+                class="profile-image"
+                style="align-self: center"
+                alt=""
+                width= "120"
+                height= "120"
+              />
+                <!-- <i class="fas fa-user"></i> -->
+            <h4>IKENNA GARY</h4>
+        </div>
+      </center>
+      <a href="#"> <i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#"> <i class="fas fa-credit-card"></i><span>Loans</span></a>
+      <a href="#"> <i class="fas fa-coins"></i><span>Savings</span></a>
+      <a href="#"> <i class="fas fa-rocket"></i><span>Investments</span></a>
+      <a href="#"> <i class="fas fa-user"></i><span>My Account</span></a>
+      <a href="#"> <i class="fas fa-file-contract"></i><span>Terms and Conditions</span></a>
+      <a href="index.html"> <i class="fas fa-sign-out-alt"></i></i><span>Logout</span></a>
+    </div>
+
+    <div id="main-section">
+      <div class="main-header">
+          <div class="main-word">
+            <h1>WELCOME IKENNA,</h1>
+          </div>
+          <div class="nemento">
+            <h3>
+             Download our mobile app
+            </h3>
+            <div class="imgbxapp">
+              <div class="cc7dyt">
+                <img src="./public/Assets/images/app/ios.webp" alt="" />
+                <img src="./public/Assets/images/app/android.webp" alt="" />
+              </div>
+            </div>
+          </div>
+      </div>  
+      <div class="main-body">
+          <div class="finance-main-body">
+              <div class="loan-section">
+                  <div class="loan-header">
+                      <h2>Loan</h2>
+                  </div>
+                  <div class="loan-body">
+                      <div class="total-loan">
+                          <h3 class="head">Total Loans</h3>
+                          <span><h3>0</h3></span>
+
+                      </div>
+                      <div class="bal-loan">
+                        <h3 class="head">Loan Balance</h3>
+                        <span><h3>N0.00</h3></span>
+
+                    </div>
+                    <div class="apr-loan">
+                        <h3 class="head">Fixed APR</h3>
+                        <span><h3>10%</h3></span>
+
+                    </div>
+                  </div>
+              </div>
+
+              <div class="savings-section">
+                <div class="savings-header">
+                    <h2>Savings</h2>
+                </div>
+                <div class="savings-body">
+                    <div class="total-savings">
+                        <h3 class="head">Savings Balance</h3>
+                        <span><h3>N0.00</h3></span>
+
+                    </div>
+                    <div class="target-savings">
+                      <h3 class="head">My Target</h3>
+                      <span><h3>N0.00</h3></span>
+
+                  </div>
+                  <div class="ref-savings">
+                      <h3 class="head">Refer A Friend</h3>
+                      <span style="padding-left:10px; font-size: 0.8em;"><h3>Earn N500 bonus by referring a friend</h3></span>
+
+                  </div>
+                </div>
+            </div>
+
+            <div class="invest-section">
+                <div class="invest-header">
+                    <h2>Investments</h2>
+                </div>
+                <div class="invest-body">
+                    <div class="total-invest">
+                        <h3 class="head">Total Investments</h3>
+                        <span><h3>0</h3></span>
+
+                    </div>
+                    <div class="bal-invest">
+                      <h3 class="head">My Investments</h3>
+                      <span><h3>You have none</h3></span>
+                      <a href="#">START NOW !</a>
+
+                  </div>
+                  <div class="expect-invest">
+                      <h3 class="head">Expected ROI</h3>
+                      <span><h3>Up to 25% per annum</h3></span>
+
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="other-main-body">
+            <div class="business-other">
+                <div class="business-img">
+                    <center>
+                        <img
+                        src="public/Assets/svg/small_svg/progress1.svg"
+                        alt=""
+                        height="150"
+                      />
+                    </center>
+                </div>
+                <div class="business-words">
+                    <h3>Who says your small business needs to stay small </h3>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script> 
+     var j = [5,6,8,2,3,2];
+     var a =0;
+     for(let i = 0; i < j.length; i++) {
+        a += j[i];
+     }
+     console.log(a)
+
+    </script>
+
+
+  </body>
+</html>
